@@ -9,3 +9,24 @@ h1 {
   font-size: 3em;
   line-height: 1;
 }
+
+a {
+  color: blue;
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+}
+
+blockquote {
+  font-family: monospace;
+}
+
+img {
+  filter: grayscale(100%);
+}
+
+figure {
+  margin: 1.5em 0;
+}
