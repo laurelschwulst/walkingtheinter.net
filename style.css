@@ -68,3 +68,7 @@ hr {
   border-bottom: 1px dashed blue;
   margin: 2.5em 0;
 }
+
+cite {
+  font-style: normal;
+}
