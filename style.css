@@ -46,9 +46,19 @@ a.button,
 
 a.button:hover {
   background: black;
+  border-color: black;
 }
 
 .selected {
   background: black;
   border-color: black;
+}
+
+a.home {
+  display: inline-block;
+  margin-bottom: 0.25em;
+}
+
+a.home:hover {
+  color: blue;
 }
