@@ -25,8 +25,30 @@ blockquote {
 
 img {
   filter: grayscale(100%);
+  max-width: 100%;
 }
 
 figure {
   margin: 1.5em 0;
+}
+
+a.button,
+.selected {
+  border: 1px solid blue;
+  display: inline-block;
+  background: blue;
+  color: #F3F7FF;
+  padding: 0.05em 0.15em;
+  border-radius: 0.25em;
+  margin: 0 0.15em 0.15em 0;
+  background: blue;
+}
+
+a.button:hover {
+  background: black;
+}
+
+.selected {
+  background: black;
+  border-color: black;
 }
