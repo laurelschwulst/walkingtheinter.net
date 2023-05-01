@@ -50,7 +50,7 @@ function getWelcomeMessage() {
   } else if (curHr < 18) {
     welcomeMessageSpan.textContent = 'Good afternoon';
   } else {
-    welcomeMessageSpan.textContent = 'Good Evening';
+    welcomeMessageSpan.textContent = 'Good evening';
   }
   
 }

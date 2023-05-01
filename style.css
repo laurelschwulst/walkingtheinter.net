@@ -98,7 +98,7 @@ main {
 }
 
 span {
-  margin-top: -80px;
+  /* margin-top: -80px; */
 }
 
 section{
@@ -118,6 +118,7 @@ section{
 
 .description {
   max-width: 20em;
+  margin-top: 1.5em;
 }
 
 .text-left {
@@ -125,9 +126,17 @@ section{
   text-align: left;
 }
 
+.text-right .description {
+  float: left;
+}
+
 .text-right {
   float: right;
   text-align: right;
+}
+
+.text-right .description {
+  float: right;
 }
 
 .img-right {
@@ -156,4 +165,11 @@ section{
 
 .filter {
   -webkit-filter: grayscale(100%);
+}
+
+.reflection {
+  font-size: 0.75em;
+  line-height: 1.25;
+  display: inline-block;
+  font-style: italic;
 }
