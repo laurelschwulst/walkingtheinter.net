@@ -36,24 +36,23 @@ figure {
 
 a.button,
 .selected {
-  border: 1px solid #0b3ccc;
+  border: 2px dashed #0b3ccc;
   display: inline-block;
-  background: #0b3ccc;
-  color: #F3F7FF;
+  color: #0b3ccc;
+  background: #F3F7FF;
   padding: 0.075em 0.2em 0.125em;
   border-radius: 0.25em;
   margin: 0 0.15em 0.15em 0;
-  background: #0b3ccc;
 }
 
 a.button:hover {
-  background: black;
-  border-color: black;
+  background: #0b3ccc;
+  color: #F3F7FF;
 }
 
 .selected {
-  background: black;
-  border-color: black;
+  background: #0b3ccc;
+  color: #F3F7FF;
 }
 
 a.home {
@@ -67,7 +66,7 @@ a.home:hover {
 
 hr {
   border: 0;
-  border-bottom: 1px dashed #0b3ccc;
+  border-bottom: 2px dashed #0b3ccc;
   margin: 2.5em 0;
 }
 
