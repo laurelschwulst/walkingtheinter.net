@@ -1,17 +1,19 @@
 body {
-  background: #F3F7FF;
+  font-family: "Helvetica Neue", "Helvetica", sans-serif;
   color: #0b3ccc;
-  font-family: 'SF Pro Display','-apple-system','BlinkMacSystemFont','San Francisco','Helvetica Neue','Helvetica','Ubuntu','Roboto','Noto','Segoe UI','Arial',sans-serif;
+  background-color: #f6f9fe;
+  max-width: 450px;
+  margin: auto;
 }
 
 h1 {
-  color: blue;
-  font-size: 3em;
+  color: #0b3ccc;
+  font-size: 4em;
   line-height: 1;
 }
 
 a {
-  color: blue;
+  color: #0b3ccc;
   text-decoration: none;
 }
 
@@ -24,8 +26,8 @@ blockquote {
 }
 
 img {
-  filter: grayscale(100%);
-  max-width: 100%;
+  position: relative;
+  z-index: -1;
 }
 
 figure {
@@ -34,14 +36,14 @@ figure {
 
 a.button,
 .selected {
-  border: 1px solid blue;
+  border: 1px solid #0b3ccc;
   display: inline-block;
-  background: blue;
+  background: #0b3ccc;
   color: #F3F7FF;
-  padding: 0.05em 0.15em;
+  padding: 0.075em 0.2em 0.125em;
   border-radius: 0.25em;
   margin: 0 0.15em 0.15em 0;
-  background: blue;
+  background: #0b3ccc;
 }
 
 a.button:hover {
@@ -60,12 +62,12 @@ a.home {
 }
 
 a.home:hover {
-  color: blue;
+  color: #0b3ccc;
 }
 
 hr {
   border: 0;
-  border-bottom: 1px dashed blue;
+  border-bottom: 1px dashed #0b3ccc;
   margin: 2.5em 0;
 }
 
@@ -73,22 +75,12 @@ cite {
   font-style: normal;
 }
 
-h2 { color: blue; }
+h2 {
+  font-size: 3em;
+  margin: 0px;
+}
 
 /* new */
-
-img {
-  position: relative;
-  z-index: -1;
-}
-
-body {
-  font-family: helvetica;
-  color: #0b3ccc;
-  background-color: #f6f9fe;
-  max-width: 450px;
-  margin: auto;
-}
 
 p {
   margin-top: 0.5em;
@@ -104,16 +96,6 @@ header {
 main {
   max-width: 960px;
   margin: 0 auto;
-}
-
-h1 {
-  font-size: 4em;
-  text-align: left;
-}
-
-h2 {
-  font-size: 3em;
-  margin: 0px;
 }
 
 span {
