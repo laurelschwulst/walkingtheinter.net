@@ -1,11 +1,11 @@
 body {
   background: #F3F7FF;
+  color: #0b3ccc;
   font-family: 'SF Pro Display','-apple-system','BlinkMacSystemFont','San Francisco','Helvetica Neue','Helvetica','Ubuntu','Roboto','Noto','Segoe UI','Arial',sans-serif;
 }
 
 h1 {
   color: blue;
-  margin-top: 0;
   font-size: 3em;
   line-height: 1;
 }
@@ -74,3 +74,105 @@ cite {
 }
 
 h2 { color: blue; }
+
+/* new */
+
+img {
+  position: relative;
+  z-index: -1;
+}
+
+body {
+  font-family: helvetica;
+  color: #0b3ccc;
+  background-color: #f6f9fe;
+  max-width: 450px;
+  margin: auto;
+}
+
+p {
+  margin-top: 0.5em;
+  margin-bottom: 4em;
+  font-size: 20px;
+}
+
+header {
+  margin-bottom: 5em;
+  text-align: right;
+}
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 4em;
+  text-align: left;
+}
+
+h2 {
+  font-size: 3em;
+  margin: 0px;
+}
+
+span {
+  margin-top: -80px;
+}
+
+section{
+  margin-bottom: 20px;
+}
+
+.map {
+  position: relative;
+  max-width: 40%;
+  margin-bottom: -70px;
+  z-index: -1;
+}
+
+.photo {
+  max-width: 70%;
+}
+
+.description {
+  max-width: 20em;
+}
+
+.text-left {
+  float: left;
+  text-align: left;
+}
+
+.text-right {
+  float: right;
+  text-align: right;
+}
+
+.img-right {
+  float: right;
+}
+
+.welcome {
+  text-align: left;
+}
+
+.toggleColor {
+  background: #f6f9fe;
+  color: #0b3ccc;
+  padding: 5px 0px;
+  width: 100px;
+  border-radius: 5px;
+  border: solid 1px #0b3ccc;
+  text-align: center;
+  cursor: pointer;
+}
+
+.toggleColor:hover {
+  background: #0b3ccc;
+  color:white;
+}
+
+.filter {
+  -webkit-filter: grayscale(100%);
+}
