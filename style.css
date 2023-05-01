@@ -1,13 +1,16 @@
 body {
   font-family: "Helvetica Neue", "Helvetica", sans-serif;
-  color: #0b3ccc;
+  color: #173EDD;
   background-color: #f6f9fe;
+}
+
+main {
   max-width: 450px;
   margin: auto;
 }
 
 h1 {
-  color: #0b3ccc;
+  color: #173EDD;
   font-size: 4em;
   line-height: 1;
 }
@@ -38,7 +41,7 @@ a.button,
 .selected {
   border: 2px dashed #0b3ccc;
   display: inline-block;
-  color: #0b3ccc;
+  color: #173EDD;
   background: #F3F7FF;
   padding: 0.075em 0.2em 0.125em;
   border-radius: 0.25em;
@@ -46,12 +49,12 @@ a.button,
 }
 
 a.button:hover {
-  background: #0b3ccc;
+  background: #173EDD;
   color: #F3F7FF;
 }
 
 .selected {
-  background: #0b3ccc;
+  background: #173EDD;
   color: #F3F7FF;
 }
 
@@ -61,12 +64,12 @@ a.home {
 }
 
 a.home:hover {
-  color: #0b3ccc;
+  color: #173EDD;
 }
 
 hr {
   border: 0;
-  border-bottom: 2px dashed #0b3ccc;
+  border-bottom: 2px dashed #173EDD;
   margin: 2.5em 0;
 }
 
@@ -92,17 +95,13 @@ header {
   text-align: right;
 }
 
-main {
-  max-width: 960px;
-  margin: 0 auto;
-}
-
 span {
   /* margin-top: -80px; */
 }
 
 section{
   margin-bottom: 20px;
+  clear: both;
 }
 
 .map {
@@ -119,6 +118,7 @@ section{
 .description {
   max-width: 20em;
   margin-top: 1.5em;
+  font-size: 1.5em;
 }
 
 .text-left {
@@ -126,7 +126,7 @@ section{
   text-align: left;
 }
 
-.text-right .description {
+.text-left .description {
   float: left;
 }
 
@@ -137,6 +137,16 @@ section{
 
 .text-right .description {
   float: right;
+}
+
+.description a {
+  text-decoration: underline;
+}
+
+.description a:hover {
+  background: #0b3ccc;
+  color: #f6f9fe;
+  text-decoration: none;
 }
 
 .img-right {
@@ -172,4 +182,10 @@ section{
   line-height: 1.25;
   display: inline-block;
   font-style: italic;
+}
+
+img.map {
+/*   border: 2px solid #0b3ccc; */
+  diplay: inline-block;
+  border-radius: 50%;
 }
