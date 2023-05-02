@@ -31,6 +31,7 @@ blockquote {
 img {
   position: relative;
   z-index: -1;
+  max-width: 100%;
 }
 
 figure {
@@ -62,6 +63,37 @@ p a.button {
 p a.button:hover {
   background: #0b3ccc;
   border-color: #0b3ccc;
+}
+
+.selected-button {
+  display: inline-block;
+  color: #173EDD;
+  background: #F3F7FF;
+  padding: 0.075em 0.2em 0.125em;
+  border-radius: 0.25em;
+  margin: 0 0.15em 0.15em 0;
+  background: #0b3ccc;
+  color: #f6f9fe;
+  border: 1px solid #0b3ccc;
+}
+
+section.about p {
+  margin-bottom: 1.5em;
+}
+
+section.about a {
+  text-decoration: underline;
+}
+
+section.about a:hover {
+  text-decoration: underline;
+  background: #173EDD;
+  color: #f6f9fe;
+  text-decoration: none;
+}
+
+section.about blockquote {
+  margin-bottom: 2em;
 }
 
 .selected {
