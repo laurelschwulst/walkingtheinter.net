@@ -3,6 +3,9 @@ body {
   color: #173edd;
   background-color: #f6f9fe;
   margin: 0;
+/*   padding: 0.5em 0.5em; */
+}
+.container {
   padding: 0.5em 0.5em;
 }
 
@@ -256,15 +259,42 @@ img.map {
 
 nav#main {
   position: fixed;
-  top: 0.5em;
-  left: 0.5em;
+  top: 0.75em;
+  right: 0.75em;
+  text-align: right;
+  font-size: 0.75em;
 }
 
-nav#main a.button {
-  background: #0b3ccc;
+nav#main a {
+  display: inline-block;
+  background: #f6f9fe;
   border-color: #0b3ccc;
   margin-bottom: 0.25em;
-  color: white;
+  padding: 0.075em 0.2em 0.125em;
+  border-radius: 0.25em;
+}
+
+details {
+  padding-right: 0.5em;
+}
+
+summary {
+  background: #0b3ccc;
+  color: #f6f9fe;
+  padding: 0.075em 0.2em 0.125em;
+  border-radius: 0.25em;
+  font-size: 1.25em;
+}
+
+.map-link {
+  font-size: 1.25em;
+}
+
+.weather {
+  font-size: 0.5em;
+  display: inline-block;
+  margin-top: 0;
+  position: absolute;
 }
 
 @media screen and (max-width: 768px) {
@@ -274,6 +304,9 @@ nav#main a.button {
 
   h2 {
     font-size: 1.75em;
+  }
+  .welcome {
+    font-size: .75em;
   }
 
   .reflection {
