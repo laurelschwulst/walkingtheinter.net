@@ -242,3 +242,12 @@ img.map {
 .plus-minus {
   font-family: monospace;
 }
+
+#full-map {
+/*   background: #223DD5; */
+}
+
+nav#map {
+  position: fixed;
+  background: yellow;
+}
