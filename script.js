@@ -20,11 +20,9 @@ let weatherConditions = {
 
 
 // Fetches current weather conditions and populates the welcome message with appropriate instructions
-async function getWeather() {
-  const tourAdvisorySpan = document.querySelector("#tourAdvisory"); 
+async function getWeather(lat,long, span) {
+  const tourAdvisorySpan = document.querySelector(span); 
   let apiKey = 'ccbe08283ae16503f369c6e8ea774996';
-  let lat = '40.3487' // Princeton latitude
-  let long = '-74.659' // Princeton longitude
   const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&units=metric&APPID=${apiKey}`;
 
   await fetch(url)
@@ -55,14 +53,12 @@ function getWelcomeMessage() {
   
 }
 
-// Change the page style based on time of day.
+// Change the page style based on time of day.-currently not in use
 function changeStyleByTime() {
   var currentTime = new Date().getHours();
-  const fullBody = document.querySelector("#welcomeMessage");
+  const fullBody = document.querySelector("body");
 
     if (7 >= currentTime || currentTime > 19) {
-      // document.body.style.color = "white";
-      // document.body.style.backgroundColor = "#121212";
       fullBody.classList.add("night");
     } 
 }
@@ -72,7 +68,8 @@ function changeStyleByTime() {
 $(document).ready(function(){
   // Call functions to populate welcome msg, weather, and style based on time
     getWelcomeMessage();
-    getWeather();
+    getWeather('40.3487','-74.659', "#tourAdvisory"); // Get Princeton Weather
+    //getWeather('40.3487','-74.659', "#tourAdvisory"); // Get NY Weather
     changeStyleByTime();
   
   

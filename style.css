@@ -1,9 +1,9 @@
 body {
   font-family: "Helvetica Neue", "Helvetica", sans-serif;
-  color: #173EDD;
+  color: #173edd;
   background-color: #f6f9fe;
   margin: 0;
-  padding: .5em .5em;
+  padding: 0.5em 0.5em;
 }
 
 main {
@@ -12,7 +12,7 @@ main {
 }
 
 h1 {
-  color: #173EDD;
+  color: #173edd;
   font-size: 4em;
   line-height: 1;
 }
@@ -45,8 +45,8 @@ a.button,
 a.button.selected {
   border: 2px dashed #0b3ccc;
   display: inline-block;
-  color: #173EDD;
-  background: #F3F7FF;
+  color: #173edd;
+  background: #f3f7ff;
   padding: 0.075em 0.2em 0.125em;
   border-radius: 0.25em;
   margin: 0 0.15em 0.15em 0;
@@ -54,8 +54,8 @@ a.button.selected {
 
 a.button:hover,
 a.button.selected {
-  background: #173EDD;
-  color: #F3F7FF;
+  background: #173edd;
+  color: #f3f7ff;
 }
 
 p a.button {
@@ -71,8 +71,8 @@ p a.button:hover {
 
 .selected-button {
   display: inline-block;
-  color: #173EDD;
-  background: #F3F7FF;
+  color: #173edd;
+  background: #f3f7ff;
   padding: 0.075em 0.2em 0.125em;
   border-radius: 0.25em;
   margin: 0 0.15em 0.15em 0;
@@ -91,7 +91,7 @@ section.about a {
 
 section.about a:hover {
   text-decoration: underline;
-  background: #173EDD;
+  background: #173edd;
   color: #f6f9fe;
   text-decoration: none;
 }
@@ -101,8 +101,8 @@ section.about blockquote {
 }
 
 .selected {
-  background: #173EDD;
-  color: #F3F7FF;
+  background: #173edd;
+  color: #f3f7ff;
 }
 
 a.home {
@@ -111,12 +111,12 @@ a.home {
 }
 
 a.home:hover {
-  color: #173EDD;
+  color: #173edd;
 }
 
 hr {
   border: 0;
-  border-bottom: 2px dashed #173EDD;
+  border-bottom: 2px dashed #173edd;
   margin: 2.5em 0;
 }
 
@@ -145,7 +145,7 @@ span {
   /* margin-top: -80px; */
 }
 
-section{
+section {
   margin-bottom: 20px;
   clear: both;
 }
@@ -190,7 +190,7 @@ section{
 }
 
 .description a:hover {
-  background: #173EDD;
+  background: #173edd;
   color: #f6f9fe;
   text-decoration: none;
 }
@@ -205,18 +205,18 @@ section{
 
 .toggleColor {
   background: #f6f9fe;
-  color: #173EDD;
+  color: #173edd;
   padding: 5px 0px;
   width: 100px;
   border-radius: 5px;
-  border: solid 1px #173EDD;
+  border: solid 1px #173edd;
   text-align: center;
   cursor: pointer;
 }
 
 .toggleColor:hover {
-  background: #173EDD;
-  color:white;
+  background: #173edd;
+  color: white;
 }
 
 .filter {
@@ -236,7 +236,7 @@ section{
 }
 
 img.map {
-/*   border: 2px solid #0b3ccc; */
+  /*   border: 2px solid #0b3ccc; */
   diplay: inline-block;
   border-radius: 50%;
 }
@@ -247,7 +247,7 @@ img.map {
 
 #full-map {
   max-height: 100vh;
-  background: #223DD5;
+  background: #223dd5;
 }
 
 #full-map img {
@@ -268,33 +268,31 @@ nav#main a.button {
 }
 
 @media screen and (max-width: 768px) {
-  
   h1 {
     font-size: 2.25em;
   }
-  
+
   h2 {
     font-size: 1.75em;
   }
-  
+
   .reflection {
-    font-size: .75em;
+    font-size: 0.75em;
   }
-  
+
   .description {
     font-size: 1em;
   }
-  
+
   p {
     font-size: 1.25em;
   }
-  
+
   .text-right {
     padding-left: 4em;
   }
-  
+
   .text-left {
     padding-right: 4em;
   }
-  
 }
