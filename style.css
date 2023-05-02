@@ -292,4 +292,13 @@ nav#main a.button {
   body {
     padding: .5em .5em;
   }
+  
+  .text-right {
+    padding-left: 4em;
+  }
+  
+  .text-left {
+    padding-right: 4em;
+  }
+  
 }
