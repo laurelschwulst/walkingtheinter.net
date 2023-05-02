@@ -253,10 +253,16 @@ img.map {
   max-height: 100vh;
 }
 
-nav#map {
-  position: sticky;
+nav#main {
+  position: fixed;
   top: 0.5em;
   left: 0.5em;
+}
+
+nav#main a.button {
+  background: #0b3ccc;
+  border-color: #0b3ccc;
+  margin-bottom: 0.25em;
 }
 
 @media screen and (max-width: 768px) {
@@ -266,6 +272,22 @@ nav#map {
   }
   h2 {
     font-size: 1.5em;
+
   }
-  
+  .reflection {
+    font-size: .5em;
+  }
+  .description {
+    font-size: .75em;
+  }
+  p {
+    font-size: 1em;
+  }
+  body {
+    padding: .5em .5em;
+  }
+  .text-left .description {
+  }
+  .text-left .description {
+  }
 }
