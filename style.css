@@ -2,6 +2,7 @@ body {
   font-family: "Helvetica Neue", "Helvetica", sans-serif;
   color: #173EDD;
   background-color: #f6f9fe;
+  margin: 0;
 }
 
 main {
@@ -244,10 +245,27 @@ img.map {
 }
 
 #full-map {
-/*   background: #223DD5; */
+  max-height: 100vh;
+  background: #223DD5;
+}
+
+#full-map img {
+  max-height: 100vh;
 }
 
 nav#map {
-  position: fixed;
-  background: yellow;
+  position: sticky;
+  top: 0.5em;
+  left: 0.5em;
+}
+
+@media screen and (max-width: 768px) {
+  
+  h1 {
+    font-size: 2em;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+  
 }
