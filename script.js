@@ -20,8 +20,8 @@ let weatherConditions = {
 
 
 // Fetches current weather conditions and populates the welcome message with appropriate instructions
-async function getWeather(lat,long, span) {
-  const tourAdvisorySpan = document.querySelector(span); 
+async function getWeather(lat,long, locationSpan) {
+  const tourAdvisorySpan = document.querySelector(locationSpan); 
   let apiKey = 'ccbe08283ae16503f369c6e8ea774996';
   const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&units=metric&APPID=${apiKey}`;
 
@@ -68,8 +68,8 @@ function changeStyleByTime() {
 $(document).ready(function(){
   // Call functions to populate welcome msg, weather, and style based on time
     getWelcomeMessage();
-    getWeather('40.3487','-74.659', "#tourAdvisory"); // Get Princeton Weather
-    //getWeather('40.3487','-74.659', "#tourAdvisory"); // Get NY Weather
+    getWeather('40.3487','-74.659', "#tourAdvisoryPrinceton"); // Get Princeton Weather
+    //getWeather('40.7143','-74.659', "#tourAdvisoryNY"); // Get NY Weather
     changeStyleByTime();
   
   
