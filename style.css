@@ -263,6 +263,7 @@ nav#main a.button {
   background: #0b3ccc;
   border-color: #0b3ccc;
   margin-bottom: 0.25em;
+  color: white;
 }
 
 @media screen and (max-width: 768px) {
@@ -270,24 +271,25 @@ nav#main a.button {
   h1 {
     font-size: 2em;
   }
+  
   h2 {
     font-size: 1.5em;
 
   }
+  
   .reflection {
     font-size: .5em;
   }
+  
   .description {
     font-size: .75em;
   }
+  
   p {
     font-size: 1em;
   }
+  
   body {
     padding: .5em .5em;
-  }
-  .text-left .description {
-  }
-  .text-left .description {
   }
 }
