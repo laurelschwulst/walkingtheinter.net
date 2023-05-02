@@ -58,10 +58,12 @@ function getWelcomeMessage() {
 // Change the page style based on time of day.
 function changeStyleByTime() {
   var currentTime = new Date().getHours();
+  const fullBody = document.querySelector("#welcomeMessage");
 
     if (7 >= currentTime || currentTime > 19) {
       // document.body.style.color = "white";
       // document.body.style.backgroundColor = "#121212";
+      fullBody.classList.add("night");
     } 
 }
 

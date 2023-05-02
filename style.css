@@ -3,6 +3,7 @@ body {
   color: #173EDD;
   background-color: #f6f9fe;
   margin: 0;
+  padding: .5em .5em;
 }
 
 main {
@@ -269,28 +270,23 @@ nav#main a.button {
 @media screen and (max-width: 768px) {
   
   h1 {
-    font-size: 2em;
+    font-size: 2.25em;
   }
   
   h2 {
-    font-size: 1.5em;
-
+    font-size: 1.75em;
   }
   
   .reflection {
-    font-size: .5em;
-  }
-  
-  .description {
     font-size: .75em;
   }
   
-  p {
+  .description {
     font-size: 1em;
   }
   
-  body {
-    padding: .5em .5em;
+  p {
+    font-size: 1.25em;
   }
   
   .text-right {
