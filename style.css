@@ -226,6 +226,11 @@ section{
   font-style: italic;
 }
 
+.small {
+  font-size: 1em;
+  line-height: 1.25;
+}
+
 img.map {
 /*   border: 2px solid #0b3ccc; */
   diplay: inline-block;
