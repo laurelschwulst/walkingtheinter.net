@@ -60,8 +60,8 @@ function changeStyleByTime() {
   var currentTime = new Date().getHours();
 
     if (7 >= currentTime || currentTime > 19) {
-      document.body.style.color = "white";
-      document.body.style.backgroundColor = "#121212";
+      // document.body.style.color = "white";
+      // document.body.style.backgroundColor = "#121212";
     } 
 }
 

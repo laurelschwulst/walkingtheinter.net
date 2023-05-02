@@ -5,7 +5,7 @@ body {
 }
 
 main {
-  max-width: 450px;
+  max-width: 800px;
   margin: auto;
 }
 
@@ -144,7 +144,7 @@ section{
 }
 
 .description a:hover {
-  background: #0b3ccc;
+  background: #173EDD;
   color: #f6f9fe;
   text-decoration: none;
 }
@@ -159,17 +159,17 @@ section{
 
 .toggleColor {
   background: #f6f9fe;
-  color: #0b3ccc;
+  color: #173EDD;
   padding: 5px 0px;
   width: 100px;
   border-radius: 5px;
-  border: solid 1px #0b3ccc;
+  border: solid 1px #173EDD;
   text-align: center;
   cursor: pointer;
 }
 
 .toggleColor:hover {
-  background: #0b3ccc;
+  background: #173EDD;
   color:white;
 }
 
