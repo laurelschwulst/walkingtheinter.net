@@ -53,6 +53,17 @@ a.button:hover {
   color: #F3F7FF;
 }
 
+p a.button {
+  background: #0b3ccc;
+  color: #f6f9fe;
+  border: 1px solid #0b3ccc;
+}
+
+p a.button:hover {
+  background: #0b3ccc;
+  border-color: #0b3ccc;
+}
+
 .selected {
   background: #173EDD;
   color: #F3F7FF;
@@ -91,8 +102,7 @@ p {
 }
 
 header {
-  margin-bottom: 5em;
-  text-align: right;
+  margin-bottom: 2.5em;
 }
 
 span {
