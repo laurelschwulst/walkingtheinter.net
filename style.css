@@ -39,7 +39,8 @@ figure {
 }
 
 a.button,
-.selected {
+.selected,
+a.button.selected {
   border: 2px dashed #0b3ccc;
   display: inline-block;
   color: #173EDD;
@@ -49,7 +50,8 @@ a.button,
   margin: 0 0.15em 0.15em 0;
 }
 
-a.button:hover {
+a.button:hover,
+a.button.selected {
   background: #173EDD;
   color: #F3F7FF;
 }
@@ -235,4 +237,8 @@ img.map {
 /*   border: 2px solid #0b3ccc; */
   diplay: inline-block;
   border-radius: 50%;
+}
+
+.plus-minus {
+  font-family: monospace;
 }
