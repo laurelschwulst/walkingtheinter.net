@@ -18,6 +18,8 @@ h1 {
   color: #173edd;
   font-size: 4em;
   line-height: 1;
+  margin: 0;
+  padding: 1em 0;
 }
 
 a {
@@ -250,11 +252,12 @@ img.map {
 
 #full-map {
   max-height: 100vh;
+  padding-top: 12px;
   background: #223dd5;
 }
 
 #full-map img {
-  max-height: 100vh;
+  max-height: calc(100vh - 22px);
 }
 
 nav#main {
@@ -284,9 +287,11 @@ summary {
   padding: 0.075em 0.2em 0.125em;
   border-radius: 0.25em;
   font-size: 1.25em;
+  cursor: pointer;
 }
 
-.map-link {
+.map-link,
+.top-link {
   font-size: 1.25em;
 }
 
@@ -295,6 +300,11 @@ summary {
   display: inline-block;
   margin-top: 0;
   position: absolute;
+}
+
+footer {
+  height: 10px;
+  background: #173edd;
 }
 
 @media screen and (max-width: 768px) {

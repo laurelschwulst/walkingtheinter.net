@@ -12,39 +12,53 @@ let weatherConditions = {
     "Please check outside before beginning and consider rescheduling if it looks too bad outside. Enjoy!",
 };
 
-princeton-weather = document.getElementbyId("princeton-weather")
+let tempEmojiMap = {
+  Thunderstorm: "⛈️",
+  Drizzle: "🌦",
+  Rain: "🌧",
+  Snow: "🌨",
+  Atmosphere: "🌤",
+  Clear: "☀️",
+  Clouds: "🌥",
+};
 
 // Fetches current weather conditions and populates the welcome message with appropriate instructions
-async function getWeather(lat, long, locationSpan) {
+async function getWeather(lat, long, locationSpan, tempSpan) {
   const tourAdvisorySpan = document.querySelector(locationSpan);
+  const temperatureSpan = document.querySelector(tempSpan);
 
   // only fetch location if the span is found
-  if (tourAdvisorySpan) {
-    let apiKey = "ccbe08283ae16503f369c6e8ea774996";
-    const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&units=metric&APPID=${apiKey}`;
+  let apiKey = "ccbe08283ae16503f369c6e8ea774996";
+  const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&units=imperial&APPID=${apiKey}`;
 
-    await fetch(url)
-      .then((response) => response.json())
-      .then(function (data) {
-        let fetchedCondition = data.weather[0].main;
-        let fetchedDescription = data.weather[0].description;
-      
-      if fetchedCondition == "Thunderstorm":
-        princeton-weather.
+  await fetch(url)
+    .then((response) => response.json())
+    .then(function (data) {
+      let fetchedCondition = data.weather[0].main;
+      let fetchedDescription = data.weather[0].description;
+      let fetchedTemp = data.main.temp;
 
-        // Return weather according to message
+    
+      // Show weather advisory if span present
+      if (tourAdvisorySpan) {
         tourAdvisorySpan.textContent =
           "Current weather reports indicate " +
           fetchedDescription +
           ". " +
           weatherConditions[fetchedCondition];
-      })
-      .catch(
-        (err) =>
-          (tourAdvisorySpan.textContent =
-            "We're not too sure about the current weather conditions. Please check the weather before departing. Enjoy!")
-      );
-  }
+      }
+
+      // Show temp/emoji if span present
+      if (temperatureSpan) {
+        temperatureSpan.textContent =
+          Math.round(fetchedTemp) + "°F  " + tempEmojiMap[fetchedCondition];
+      }
+    })
+    .catch(
+      (err) =>
+        (tourAdvisorySpan.textContent =
+          "We're not too sure about the current weather conditions. Please check the weather before departing. Enjoy!")
+    );
 }
 
 // Get the welcome message based on time of day.
@@ -77,8 +91,13 @@ function changeStyleByTime() {
 
 $(document).ready(function () {
   getWelcomeMessage(); // Get Welcome Msg on main page
-  getWeather("40.3487", "-74.659", "#tourAdvisoryPrinceton"); // Get Princeton Weather
-  getWeather("40.7143", "-74.006", "#tourAdvisoryNY"); // Get NY Weather
+  getWeather(
+    "40.3487",
+    "-74.659",
+    "#tourAdvisoryPrinceton",
+    "#princeton-weather"
+  ); // Get Princeton Weather
+  getWeather("40.7143", "-74.006", "#tourAdvisoryNY", "#nyc-weather"); // Get NY Weather
   changeStyleByTime();
 
   // Initially set images to Black/White
